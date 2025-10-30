@@ -578,4 +578,7 @@ ratio_convergence = tendance_groupe['Émergents'] / tendance_groupe['Développé
 print(f"\nRatio Émergents/Développés:")
 print(f"  2003: {ratio_
 
+![WhatsApp Image 2025-10-30 à 12 07 54_ac48035f](https://github.com/user-attachments/assets/868de2c6-0068-4eb3-952e-211a09c25d68)
+
+
 
