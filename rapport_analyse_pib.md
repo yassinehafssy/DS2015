@@ -1,7 +1,12 @@
 ![WhatsApp Image 2025-10-30 à 11 46 09_387a6bf7](https://github.com/user-attachments/assets/e4c1aa8b-5455-4149-a335-739a2827675e)
 
+
+
+
 # Rapport d'Analyse Approfondie du PIB
 ## Comparaison Internationale et Évolution Temporelle
+<img width="629" height="635" alt="image" src="https://github.com/user-attachments/assets/e4766ecc-c1f3-44ae-8d8e-93186fd8d918" />
+
 
 HAFSSY Yassine
 
@@ -572,8 +577,5 @@ print(tendance_groupe.iloc[::5])  # Affichage tous les 5 ans
 ratio_convergence = tendance_groupe['Émergents'] / tendance_groupe['Développés']
 print(f"\nRatio Émergents/Développés:")
 print(f"  2003: {ratio_
-
-<img width="1389" height="989" alt="i1 1" src="https://github.com/user-attachments/assets/18a5b5c0-01a8-4d06-b998-6d5aefcd264e" />
-
 
 
