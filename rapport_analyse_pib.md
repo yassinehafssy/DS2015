@@ -1,6 +1,3 @@
-![Uploading WhatsApp Image 2025-10-30 à 11.41.16_1895beda.jpg…]()
-
-
 # Rapport d'Analyse Approfondie du PIB
 ## Comparaison Internationale et Évolution Temporelle
 
