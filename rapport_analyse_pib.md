@@ -97,6 +97,7 @@ L'analyse s'appuie sur une approche quantitative combinant :
 - Différences méthodologiques nationales possibles
 - Économie informelle non captée (notamment pour pays émergents)
 - Révisions statistiques régulières des données historiques
+<img width="1389" height="989" alt="image" src="https://github.com/user-attachments/assets/216f38fd-4449-4240-8e0d-aa141e0438b5" />
 
 ### 2.5 Tableau récapitulatif des données (échantillon 2023)
 
@@ -578,9 +579,7 @@ ratio_convergence = tendance_groupe['Émergents'] / tendance_groupe['Développé
 print(f"\nRatio Émergents/Développés:")
 print(f"  2003: {ratio_
 
-Pour inserer une phot, un graphique, un logo
-![Analyse statistique](<img width="1389" height="989" alt="image" src="https://github.com/user-attachments/assets/a967423c-67df-405b-8682-fa150019a8f1" />
-.png)
+
 
 
 
