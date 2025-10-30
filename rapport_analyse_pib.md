@@ -573,5 +573,5 @@ ratio_convergence = tendance_groupe['Émergents'] / tendance_groupe['Développé
 print(f"\nRatio Émergents/Développés:")
 print(f"  2003: {ratio_
 
-Pour inserer une phot, un graphique, un logo
 ![Testimage](i1.png)
+
