@@ -1,6 +1,8 @@
 # Rapport d'Analyse Approfondie du PIB
 ## Comparaison Internationale et Évolution Temporelle
 
+HAFSSY YASSINE
+
 ---
 
 ## 1. Introduction et Contexte
