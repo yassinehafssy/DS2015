@@ -1,7 +1,7 @@
 # Rapport d'Analyse Approfondie du PIB
 ## Comparaison Internationale et Évolution Temporelle
 
-HAFSSY YASSINE
+HAFSSY Yassine
 
 ---
 
