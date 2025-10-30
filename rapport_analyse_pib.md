@@ -2,6 +2,7 @@
 ## Comparaison Internationale et Évolution Temporelle
 
 HAFSSY Yassine
+![WhatsApp Image 2025-10-30 à 11 41 16_7709c02a](https://github.com/user-attachments/assets/d770831c-ed2a-4594-a79b-8a773bd4592e)
 
 ---
 
