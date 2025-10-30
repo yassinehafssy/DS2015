@@ -1,8 +1,9 @@
+![WhatsApp Image 2025-10-30 à 11 46 09_387a6bf7](https://github.com/user-attachments/assets/e4c1aa8b-5455-4149-a335-739a2827675e)
+
 # Rapport d'Analyse Approfondie du PIB
 ## Comparaison Internationale et Évolution Temporelle
 
 HAFSSY Yassine
-![WhatsApp Image 2025-10-30 à 11 41 16_7709c02a](https://github.com/user-attachments/assets/d770831c-ed2a-4594-a79b-8a773bd4592e)
 
 ---
 
