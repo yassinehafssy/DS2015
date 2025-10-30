@@ -572,3 +572,6 @@ print(tendance_groupe.iloc[::5])  # Affichage tous les 5 ans
 ratio_convergence = tendance_groupe['Émergents'] / tendance_groupe['Développés']
 print(f"\nRatio Émergents/Développés:")
 print(f"  2003: {ratio_
+
+Pour inserer une phot, un graphique, un logo
+![Testimage](i1.png)
