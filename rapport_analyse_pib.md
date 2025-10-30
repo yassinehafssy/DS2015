@@ -574,5 +574,6 @@ print(f"\nRatio Émergents/Développés:")
 print(f"  2003: {ratio_
 
 
-#![Analyse statistique](distribution_valeurs.png)
+<img width="1389" height="989" alt="i1" src="https://github.com/user-attachments/assets/a7f7eba2-8f1c-4296-8663-84253d274448" />
+
 
