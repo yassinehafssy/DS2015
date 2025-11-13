@@ -1,43 +1,34 @@
-# Projet Wine Quality (Qualité du Vin)
+# Wine Quality Dataset - Projet Data Science
 
-DOI : [10.24432/C56S3T](https://doi.org/10.24432/C56S3T)
+**DOI** : [10.24432/C56S3T](https://doi.org/10.24432/C56S3T)
 
-## Description du Dataset
+---
 
-Ce projet utilise deux jeux de données concernant les vins rouges et blancs "Vinho Verde" du nord du Portugal. Le but est de modéliser la qualité du vin à partir de tests physico-chimiques.
+## Description
 
-- **Type de tâches** : Classification, Régression
-- **Nombre d'instances** : 4898
-- **Nombre de caractéristiques** : 11 (physico-chimiques)
-- **Variable cible** : Qualité (score entre 0 et 10 basé sur des données sensorielles)
+Ce dataset contient des données physico-chimiques et sensorielles sur des vins rouges et blancs "Vinho Verde" du nord du Portugal. Le but est de prédire la qualité du vin, évaluée par des experts, sur une échelle de 0 à 10.
 
-## Variables
+- **Tâches** : Classification et régression
+- **Nombre d’échantillons** : 4898
+- **Variables d’entrée** : 11 caractéristiques continues mesurées physico-chimiquement
+- **Variable cible** : Qualité (score de 0 à 10)
 
-| Nom                | Type       | Description                      | Unité      |
-|--------------------|------------|--------------------------------|------------|
-| fixed_acidity       | Feature    | Acidité fixe                   | Continu    |
-| volatile_acidity    | Feature    | Acidité volatile               | Continu    |
-| citric_acid        | Feature    | Acide citrique                 | Continu    |
-| residual_sugar      | Feature    | Sucre résiduel                 | Continu    |
-| chlorides           | Feature    | Chlorures                     | Continu    |
-| free_sulfur_dioxide | Feature    | Dioxyde de soufre libre       | Continu    |
-| total_sulfur_dioxide| Feature    | Dioxyde de soufre total       | Continu    |
-| density             | Feature    | Densité                       | Continu    |
-| pH                  | Feature    | pH                            | Continu    |
-| sulphates           | Feature    | Sulfates                      | Continu    |
-| alcohol             | Feature    | Teneur en alcool              | Continu    |
-| quality             | Target     | Qualité du vin (score 0-10)   | Ordinale   |
+## Liste des Variables
 
-## Informations complémentaires
+| Variable              | Description                       |
+|-----------------------|---------------------------------|
+| fixed_acidity         | Acidité fixe                    |
+| volatile_acidity      | Acidité volatile                |
+| citric_acid          | Acide citrique                  |
+| residual_sugar        | Sucre résiduel                  |
+| chlorides             | Taux de chlorures               |
+| free_sulfur_dioxide   | Dioxyde de soufre libre         |
+| total_sulfur_dioxide  | Dioxyde total de soufre         |
+| density               | Densité                        |
+| pH                    | Potentiel hydrogène (pH)        |
+| sulphates             | Sulfates                       |
+| alcohol               | Taux d’alcool                  |
+| quality               | Qualité du vin (0-10)           |
 
-- Les datasets peuvent être utilisés pour des tâches de classification ou de régression.
-- Les classes sont ordonnées mais non équilibrées (plus de vins standards que d'excellents ou médiocres).
-- Pas de valeurs manquantes.
-- Données basées sur des tests physico-chimiques et des évaluations sensorielles uniquement.
-
-## Références
-
-P. Cortez, A. Cerdeira, F. Almeida, T. Matos, J. Reis, 2009. Wine Quality Dataset. Decision Support Systems.
-
-## Installation et chargement dans Google Colab avec Python
+## Utilisation dans Google Colab
 
