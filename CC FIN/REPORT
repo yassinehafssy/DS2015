@@ -1,28 +1,43 @@
-Introduction
+# Projet Wine Quality (Qualité du Vin)
 
-Le vin est un produit complexe dont la qualité dépend de nombreux éléments. Si le goût et l’arôme sont souvent perçus comme subjectifs, la science permet aujourd’hui de comprendre comment certains paramètres mesurables influencent la qualité finale d’un vin. À travers des analyses chimiques, il est possible d’identifier les facteurs qui rendent un vin meilleur qu’un autre.
+DOI : [10.24432/C56S3T](https://doi.org/10.24432/C56S3T)
 
-La question est donc la suivante : quels sont les principaux éléments physico-chimiques qui déterminent la qualité d’un vin ?
+## Description du Dataset
 
-I. La qualité du vin : entre tradition et science
+Ce projet utilise deux jeux de données concernant les vins rouges et blancs "Vinho Verde" du nord du Portugal. Le but est de modéliser la qualité du vin à partir de tests physico-chimiques.
 
-La qualité du vin a longtemps reposé sur l’expérience des vignerons et le jugement des dégustateurs. Cependant, cette appréciation reste subjective. Grâce aux progrès de la chimie et de l’analyse des données, on peut aujourd’hui mesurer des éléments précis du vin, comme l’acidité, le taux d’alcool, le sucre ou le pH.
-Ces paramètres permettent d’expliquer pourquoi certains vins sont perçus comme équilibrés, doux ou agréables, tandis que d’autres le sont moins.
+- **Type de tâches** : Classification, Régression
+- **Nombre d'instances** : 4898
+- **Nombre de caractéristiques** : 11 (physico-chimiques)
+- **Variable cible** : Qualité (score entre 0 et 10 basé sur des données sensorielles)
 
-II. Les principaux facteurs influençant la qualité
+## Variables
 
-Les études scientifiques, comme celles menées sur le jeu de données Wine Quality, montrent que plusieurs éléments ont une influence importante sur la qualité du vin :
+| Nom                | Type       | Description                      | Unité      |
+|--------------------|------------|--------------------------------|------------|
+| fixed_acidity       | Feature    | Acidité fixe                   | Continu    |
+| volatile_acidity    | Feature    | Acidité volatile               | Continu    |
+| citric_acid        | Feature    | Acide citrique                 | Continu    |
+| residual_sugar      | Feature    | Sucre résiduel                 | Continu    |
+| chlorides           | Feature    | Chlorures                     | Continu    |
+| free_sulfur_dioxide | Feature    | Dioxyde de soufre libre       | Continu    |
+| total_sulfur_dioxide| Feature    | Dioxyde de soufre total       | Continu    |
+| density             | Feature    | Densité                       | Continu    |
+| pH                  | Feature    | pH                            | Continu    |
+| sulphates           | Feature    | Sulfates                      | Continu    |
+| alcohol             | Feature    | Teneur en alcool              | Continu    |
+| quality             | Target     | Qualité du vin (score 0-10)   | Ordinale   |
 
-Le taux d’alcool : plus il est élevé (sans excès), plus le vin est jugé harmonieux.
+## Informations complémentaires
 
-L’acidité volatile : si elle est trop forte, elle donne un goût désagréable.
+- Les datasets peuvent être utilisés pour des tâches de classification ou de régression.
+- Les classes sont ordonnées mais non équilibrées (plus de vins standards que d'excellents ou médiocres).
+- Pas de valeurs manquantes.
+- Données basées sur des tests physico-chimiques et des évaluations sensorielles uniquement.
 
-Le sucre résiduel et le pH : ils contribuent à l’équilibre du goût.
+## Références
 
-La densité : elle dépend du taux de sucre et d’alcool et influence la texture du vin.
+P. Cortez, A. Cerdeira, F. Almeida, T. Matos, J. Reis, 2009. Wine Quality Dataset. Decision Support Systems.
 
-Ces facteurs interagissent entre eux : un bon vin résulte d’un équilibre chimique précis entre douceur, acidité et intensité aromatique.
+## Installation et chargement dans Google Colab avec Python
 
-Conclusion
-
-La qualité du vin n’est donc pas seulement une affaire de goût, mais aussi de science. Les caractéristiques physico-chimiques jouent un rôle essentiel dans la perception finale du produit. L’analyse scientifique permet ainsi de mieux comprendre, prévoir et améliorer la qualité du vin, tout en respectant le savoir-faire traditionnel des vignerons.
