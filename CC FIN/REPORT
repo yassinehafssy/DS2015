@@ -33,3 +33,100 @@ Ce dataset contient des données physico-chimiques et sensorielles sur des vins 
 
 ## Utilisation dans Google Colab
 
+
+'''
+# ============================================================
+# ANALYSE AUTOMATIQUE DU DOI : 10.24432/C56S3T
+# Jeu de données : Wine Quality (UCI Machine Learning Repository)
+# Compatible Google Colab ✅
+# ============================================================
+
+# 1️⃣ - Importation des bibliothèques nécessaires
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import urllib.request
+import zipfile
+import os
+
+sns.set(style="whitegrid")
+
+# 2️⃣ - Téléchargement automatique du dataset depuis l'UCI
+print("📥 Téléchargement du dataset depuis l'UCI Repository (DOI : 10.24432/C56S3T)...")
+
+base_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/"
+files = ["winequality-red.csv", "winequality-white.csv"]
+
+for f in files:
+    if not os.path.exists(f):
+        urllib.request.urlretrieve(base_url + f, f)
+        print(f"✅ Téléchargé : {f}")
+    else:
+        print(f"ℹ️ Déjà présent : {f}")
+
+# 3️⃣ - Chargement des deux fichiers CSV
+df_red = pd.read_csv("winequality-red.csv", sep=';')
+df_white = pd.read_csv("winequality-white.csv", sep=';')
+
+# Ajout d'une colonne pour différencier les types de vin
+df_red["type"] = "red"
+df_white["type"] = "white"
+
+# Fusion des deux jeux de données
+df = pd.concat([df_red, df_white], ignore_index=True)
+
+print("\n✅ Jeu de données combiné chargé avec succès !")
+print("Dimensions :", df.shape)
+display(df.head())
+
+# 4️⃣ - Informations générales
+print("\n=== INFORMATIONS GÉNÉRALES ===")
+print(df.info())
+
+print("\n=== STATISTIQUES DESCRIPTIVES ===")
+display(df.describe())
+
+# 5️⃣ - Analyse des valeurs manquantes
+print("\n=== VALEURS MANQUANTES ===")
+print(df.isnull().sum())
+
+# 6️⃣ - Distribution de la qualité
+plt.figure(figsize=(6,4))
+sns.countplot(x='quality', data=df, palette='mako')
+plt.title("Distribution des notes de qualité du vin")
+plt.xlabel("Note de qualité (0–10)")
+plt.ylabel("Nombre de vins")
+plt.show()
+
+# 7️⃣ - Corrélations
+corr = df.corr(numeric_only=True)
+plt.figure(figsize=(10,8))
+sns.heatmap(corr, annot=True, fmt=".2f", cmap="coolwarm")
+plt.title("Matrice de corrélation (Wine Quality)")
+plt.show()
+
+# 8️⃣ - Corrélations avec la variable 'quality'
+corr_quality = corr["quality"].sort_values(ascending=False)
+print("\n=== Corrélations avec la qualité ===")
+print(corr_quality)
+
+# 9️⃣ - Visualisation des variables les plus liées à la qualité
+top_features = corr_quality.index[1:5]
+plt.figure(figsize=(10,6))
+for i, feature in enumerate(top_features, 1):
+    plt.subplot(2,2,i)
+    sns.scatterplot(x=feature, y="quality", data=df, hue="type", alpha=0.6)
+    plt.title(f"{feature} vs quality")
+plt.tight_layout()
+plt.show()
+
+# 🔟 - Interprétation simple
+print("\n=== INTERPRÉTATION ===")
+print("➡️ L'alcool est fortement corrélé positivement à la qualité : les vins plus alcoolisés sont souvent mieux notés.")
+print("➡️ L'acidité volatile est corrélée négativement : trop d'acidité diminue la qualité perçue.")
+print("➡️ Les sulfates et le pH jouent aussi un rôle important dans l’équilibre du vin.")
+print("\n✅ Analyse complète du dataset (DOI : 10.24432/C56S3T) terminée.")
+
+'''
+
